@@ -1,5 +1,12 @@
 package RecipeProgram;
-
+/**Class: Ingredients
+ * @author Nathaniel Bannis
+ * @version 3.0
+ * Course: ITEC 2050 Spring 2020
+ * Written: February 21, 2020
+ *
+ *  Creates an array of ingredients(Not used yet, holds param of type, amount and the measurement used along with the family of ingredient
+ */
 import java.util.ArrayList;
 import java.util.Scanner;
 
@@ -22,6 +29,12 @@ public class Ingredients {
         this.amount = amount;
     }
 
+    /**Method: Ingredients constructs an ingredients object with param.
+     *
+     * @param type
+     * @param amount
+     * @param measure
+     */
     public Ingredients(String type, double amount, String measure) {
         this.type = type;
         this.amount = amount;
@@ -34,12 +47,12 @@ public class Ingredients {
     }
 
     public void setIngredients(String x) {
-        Ingredients.add(x);
+        Ingredients.add( x ) ;
     }
 
-
+    //Hasnt been used yet!
     public int locateIngredients(String In) {
-        int i = Ingredients.indexOf(In);
+        int i = Ingredients.indexOf( In );
         return i;
 
     }
@@ -69,7 +82,7 @@ public class Ingredients {
     }
 
     public String getIngredientsAtLocation(int i) {
-        return getIngredients().get(i);
+        return getIngredients().get( i );
     }
 
 

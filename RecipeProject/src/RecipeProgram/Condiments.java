@@ -1,5 +1,12 @@
 package RecipeProgram;
-
+/**Class: Condiments
+ * @author Nathaniel Bannis
+ * @version 3.0
+ * Course: ITEC 2050 Spring 2020
+ * Written: February 21, 2020
+ *
+ *  Constructor for condiments family of ingredients.
+ */
 public class Condiments extends Ingredients {
     private String family = "Condiments";
     private String type = "sugar";
