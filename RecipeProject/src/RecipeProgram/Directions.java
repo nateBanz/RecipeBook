@@ -14,7 +14,7 @@ public class Directions extends Recipes {
 
     /**
      *
-     * @param d
+     * @param d- directions for the recipe
      */
     @Override
     public void setRecipes(String d) {
@@ -27,8 +27,8 @@ public class Directions extends Recipes {
 
     /**
      *
-     * @param i
-     * @return
+     * @param i- array index of the recipe input
+     * @return the recipe at the index specified
      */
     public String getIRecipesAtLocation(int i) {
         return getRecipes().get( i );
@@ -36,8 +36,8 @@ public class Directions extends Recipes {
 
 
     public int locateRecipe(String rec) {
-        int i = directions.indexOf( rec );
-        return i;
+        return directions.indexOf( rec );
+
 
     }
 }

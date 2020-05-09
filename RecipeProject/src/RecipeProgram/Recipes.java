@@ -26,7 +26,7 @@ public class Recipes {
     public void setRecipes(String r) throws NumberFormatException {
         //r.getClass().equals(lookingfor.class)
         //this does nothing cause it causes an error not to have the same type in the code contained in Read.java
-       if(! (r instanceof String))
+       if(r == null)
            throw new NumberFormatException("You have to give me some text, nothing else!");
        else
         Recipes.add( r );
